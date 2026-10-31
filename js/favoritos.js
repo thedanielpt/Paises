@@ -4,6 +4,7 @@ import { guardarFavoritos, obtenerFavoritos } from "./almacen.js";
 
 // Referencias al DOM.
 const listaFavoritos = document.querySelector("#lista-favoritos");
+const botonOrdenar = document.querySelector("#ordenar-poblacion");
 
 // Añadir un país a favoritos.
 export function addFavorito(pais) {
@@ -55,6 +56,22 @@ listaFavoritos.addEventListener("click", (evento) => {
     // Eliminar del DOM.
     elemento.remove();
 });
+
+// Ordenar favoritos por población.
+
+botonOrdenar.addEventListener("click", () => {
+
+    const favoritos = Array.from(listaFavoritos.children);
+
+    favoritos.sort((a, b) =>
+        Number(b.dataset.poblacion) - Number(a.dataset.poblacion)
+    );
+
+    favoritos.forEach(favorito => {
+        listaFavoritos.appendChild(favorito);
+    });
+});
+
 
 // Recuperar los favoritos al abrir la página.
 export function cargarFavoritos() {

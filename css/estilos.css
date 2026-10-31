@@ -155,3 +155,18 @@ aside {
 .btn-eliminar-favorito:hover {
     background-color: #b02a37;
 }
+
+/* oton de ordenar poblacion*/
+
+#ordenar-poblacion {
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#ordenar-poblacion:hover {
+    background-color: #1d4ed8;
+}
