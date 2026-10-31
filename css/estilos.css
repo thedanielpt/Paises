@@ -1,0 +1,157 @@
+main {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    height: 100%;
+    width: 90%;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside {
+    width: 20%;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+/* formulario */
+
+
+#form-busqueda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 400px;
+}
+
+#input-pais {
+    font-size: 1.1rem;
+    height: 40px;
+    width: 90%;
+    padding-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#input-pais:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+#form-busqueda button {
+    height: 40px;
+    width: 50%;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#form-busqueda button:hover {
+    background-color: #1d4ed8;
+}
+
+
+/*Informacion del pais*/
+
+
+.paises {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgb(180, 227, 229);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.paises img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.paises h3 {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.paises p {
+    font-size: 1rem;
+    margin: 8px 0;
+}
+
+
+/*Errores*/
+
+
+.error {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+
+/*Favoritos*/
+
+
+#lista-favoritos {
+    width: 90%;
+    padding: 0;
+    margin-top: 5px;
+    list-style: none;
+}
+
+.favorito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+}
+
+
+/* Botón para añadir a favoritos */
+
+
+.btn-favorito {
+    background-color: #2FA84F;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-favorito:hover {
+    background-color: #218838;
+}
+
+/* Elemento de la lista de favoritos */
+
+.btn-eliminar-favorito {
+    background-color: #dc3545;
+    color: white;
+    padding: 4px 9px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+
+.btn-eliminar-favorito:hover {
+    background-color: #b02a37;
+}
